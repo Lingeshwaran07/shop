@@ -84,7 +84,7 @@ const Cart = () => {
             </div>
 
             <span className="binicon">
-              <button onClick={()=>confirmAlert({
+              <button  style={{backgroundColor:"transparent",border:"none"}} onClick={()=>confirmAlert({
                 title: 'Are You Sure?',
                 message: 'Do you want to remove this item from cart?',
                 buttons: [
@@ -98,7 +98,7 @@ const Cart = () => {
                     onClick: () => console.log("exit")
                   }
                 ]
-              })} type="submit" className="btn "><AiFillDelete  className="deletecolor" /></button>
+              })} type="submit" ><AiFillDelete  className="deletecolor" /></button>
             </span>
           </div>
         );
