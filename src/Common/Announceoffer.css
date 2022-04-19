@@ -2,7 +2,7 @@
   font-family: "Fredoka", sans-serif;
 
   padding: 2px;
-  font-size: 10px;
+  font-size: 13px;
 }
 div.scrolling-limit{
   
@@ -10,6 +10,7 @@ div.scrolling-limit{
     
     overflow:hidden;
     white-space:nowrap;
+    height:25px;
     
   }
   

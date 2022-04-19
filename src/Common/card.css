@@ -4,19 +4,19 @@
 
 }
 .card{
-    width:30%;
+    width:27%;
     border:0px solid ;
     /* margin-right: 60px; */
     padding: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    max-height: 333px;
+    max-height: 378.5px;
     /* margin-right: 20px; */
 
     
        
 }
 .card-title{
-    font-size: 12px;
+    font-size: 16px;
 }
 .card-body{
     padding: 0.5rem 0.5rem  0px 0.5rem !important;
@@ -36,10 +36,10 @@
     /* padding-left:15px; */
 }
 .card-text{
-    font-size: 10px;
+    font-size: 12px;
 }
 .addwish{
-    font-size: 10px;
+    font-size: 15px;
     align-items: center;
     line-height: 1.5;
     display: inline-block;

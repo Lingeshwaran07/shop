@@ -61,7 +61,10 @@ const Footer = () => {
               <FcAndroidOs className="andr" />
               Android app
             </p>
+          
           </div>
+          <p style={{margin:"0px",padding:"0"}}>https://www.linkedin.com/in/linn07/</p>
+          <p style={{margin:"0px",padding:"0"}}>lingeshsince07011998@gmail.com</p>
         </div>
       </div>
       <p className="disclaimer">

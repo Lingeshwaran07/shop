@@ -4,6 +4,7 @@
     
 }
 .customfield{
+    width:80%;
     height: 30px;
     /* box-shadow: 0 2px 10px rgb(0 0 0 / 0.1); */
 }
@@ -12,7 +13,7 @@
     box-shadow: 0 0px 15px rgb(0 0 0 / 0.1);
 } */
 .inputlabel{
-    font-size: 10px;
+    font-size: 13px;
     padding-bottom: 10px;
     padding-top: 10px;
 }

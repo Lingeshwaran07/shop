@@ -1,6 +1,6 @@
 .footmain{
     display: flex;
-    height:200px;
+    height:175px;
     background-color: black;
     color: white;
 }
@@ -68,6 +68,8 @@
 .appicons{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
 }
 .footright{
     display: flex;
@@ -80,7 +82,7 @@
     margin-left: 5px;
 }
 .ios ,.andr{
-    font-size: 16px;
+    font-size: 20px;
 }
 .disclaimer{
     font-size: 8px;

@@ -17,8 +17,8 @@ const Updatepassword = () => {
 
     const initialvalue = {
        
-        password: " ",
-        confirmpassword: " ",
+        password: "",
+        confirmpassword: "",
       };
       const validationSchema = Yup.object({
        

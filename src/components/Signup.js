@@ -152,6 +152,7 @@ function notify() {
                     CREATE ACCOUNT
                   </button>
                   <ToastContainer
+                  style={{ width: "45%" }}
                     position="bottom-right"
                     hideProgressBar={false}
                     autoClose={5000}
@@ -159,6 +160,7 @@ function notify() {
                     closeOnClick={false}
                     draggable={false}
                     rtl={false}
+                    
                   
                     
                   />

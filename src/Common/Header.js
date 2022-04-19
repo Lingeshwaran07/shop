@@ -95,11 +95,12 @@ if (loginstatus===true){
                     ? navigate("/wishlist")
                     : navigate("/login");
                 }}
-                className=" btn position-relative"
+                className="  position-relative"
+                style={{backgroundColor:"transparent",border:"none"}}
               >
                 <Badge color="error" badgeContent={wishlist.length}>
                   {" "}
-                  <FiHeart />
+                  <FiHeart className="iallthree" />
                 </Badge>
               </button>
             </span>
@@ -113,14 +114,14 @@ if (loginstatus===true){
               >
                 {" "}
                 <Badge color="error" badgeContent={cart.length}>
-                  <BsHandbag />
+                  <BsHandbag className="iallthree"  />
                 </Badge>
               </button>
             </span>
             {loginstatus === false ? (
               <span title="User Login" className="account">
                 <NavLink className="userlogin" to="/login">
-                  <BiUserCircle className="userloginbut" />
+                  <BiUserCircle className="iall userloginbut" />
                 </NavLink>
               </span>
             ) : (
@@ -129,8 +130,9 @@ if (loginstatus===true){
                   type="button"
                   style={{
                     display: "flex",
-                    alignItem: "center",
+                    alignItems: "center",
                     fontWeight: "20px",
+                   
                     lineHeight: "1",
                     backgroundColor: "transparent",
                     border: "none",
@@ -139,8 +141,8 @@ if (loginstatus===true){
                   data-bs-display="static"
                   aria-expanded="false"
                 >
-                  <FaUserAlt />
-                  <span>&nbsp; {username.slice(0,8)}</span>
+                  <FaUserAlt className="ialll"  />
+                  <span style={{fontSize:"18px"}}>&nbsp; {username.slice(0,8)}</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
                   <li>

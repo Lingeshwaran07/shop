@@ -14,13 +14,14 @@
     flex:1;
     background-color: rgba(252, 185, 92, 0.8);
     padding: 21px 28px 0px;
-    font-size: 10px;
+    font-size: 13px;
     margin-left: 5px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 .signintitle{
     margin-bottom: 30px;
     font-weight: bolder;
+    
 }
 .signindesp{
     padding-top: 15px;
@@ -54,15 +55,16 @@
     background-color: black;
     color:white;
     border: 2px solid black;
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 10px;
 
 }
 .forgotpassword{
-    font-size: 10px;
+    font-size: 13px;
 }
 .buttonplusreset{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
 }
