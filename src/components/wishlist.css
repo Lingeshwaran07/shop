@@ -1,0 +1,84 @@
+.continueshop{
+    /* display: inline-block;
+    border-radius: 1px;
+    padding: 0.3rem 0;
+    margin-bottom: 1rem;
+    width: 8rem;
+    
+    color:white;
+    border: 2px solid black;
+    font-size: 11px; */
+
+    display: inline-block;
+    border-radius: 1px;
+    padding: 0.3rem 0;
+    /* margin-bottom: 1rem; */
+    width: 9rem;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    font-size: 13px;
+    /* margin-top: 10px; */
+    
+}
+.wish0{
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+.wish1{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:20px 30px;
+    padding:14px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    column-gap: 15px;
+    font-weight: bolder;
+
+}
+.wishimg,.wishdesp,.wish2,.wish3,.wish4,.wish5{
+    flex:1;
+}
+.wishimg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+.wish2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.wish3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.wishdesp{
+    text-align: center;
+}
+.wishdelete{
+    background-color: transparent;
+    border: none;
+
+}
+.wish4{
+    display: flex;
+    justify-content: center;
+}
+.wish5{
+    display: flex;
+    justify-content: center;
+}
+.wishdel{
+    font-size: 20px;
+}
+
+
+
+

@@ -1,0 +1,68 @@
+.loginouter{
+    padding:10px 70px 20px 70px;
+    
+}
+.signinflex{
+    /* height:316px; */
+    display: flex;
+}
+.flexleft{
+    flex:1;
+    margin-right: 5px;
+}
+.flexright{
+    flex:1;
+    background-color: rgba(252, 185, 92, 0.8);
+    padding: 21px 28px 0px;
+    font-size: 10px;
+    margin-left: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+.signintitle{
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+.signindesp{
+    padding-top: 15px;
+    margin: 0px;
+}
+.signinlist > li{
+    padding-left: 10px;
+    list-style-type: disc;
+
+}
+.createbutton{
+    display: inline-block;
+    border-radius: 1px;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    width: 11rem;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+.createbutton:hover{
+    background-color: black;
+    color:white;
+}
+.loginbutton{
+    display: inline-block;
+    border-radius: 1px;
+    padding: 0.3rem 0;
+    margin-bottom: 1rem;
+    width: 5rem;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    font-size: 10px;
+    margin-top: 10px;
+
+}
+.forgotpassword{
+    font-size: 10px;
+}
+.buttonplusreset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

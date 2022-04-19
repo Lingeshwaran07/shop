@@ -1,0 +1,61 @@
+.accounttitle{
+    font-weight: bolder;
+    padding-left: 5px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+.mainaccount{
+    display: flex;
+   
+}
+.leftaccount{
+    flex:1;
+    margin:10px 40px 10px 40px;
+    background-color: white;
+    /* display:flex;
+    align-items: center;
+    flex-direction: column; */
+    /* border-radius: 25%; */
+}
+.rightaccount{
+    flex:1;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.accountbutton{
+    display: inline-block;
+    border-radius: 1px;
+    padding: 0.3rem 0;
+    margin-bottom: 1rem;
+    width: 10rem;
+    background-color: black;
+    color:white;
+    border: 2px solid black;
+    font-size: 10px;
+    margin-top: 10px;
+
+}
+.accounttitle{
+    background-color:rgba(252, 185, 92, 0.8) ;
+}
+.accountform{
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+   height: 360px;
+}
+.signupimage{
+    width:400px;
+    height:350px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+.twobuttons{
+    display: flex;
+    column-gap: 2px;
+}
+.Toastify__toast-container {
+    width:45%;
+}

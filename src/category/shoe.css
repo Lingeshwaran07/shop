@@ -1,0 +1,37 @@
+.mainshoe{
+    display: flex;
+}
+.leftshoe{
+    width:20%;
+    background-color: black;
+    height: 85vh;
+    color:white;
+    /* margin-top: 10px;
+    margin-left: 5px; */
+    padding-left:15px;
+    padding-right: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    flex:1;
+
+}
+.heading{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom:10px;
+
+}
+
+.clear-button{
+    width:100%;
+    margin-top: 5px;
+}
+.rightshoe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    margin-top: 10px;
+    flex:4;
+    row-gap: 20px;
+}
+

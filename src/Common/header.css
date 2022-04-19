@@ -1,0 +1,147 @@
+.mainheader{
+    width: 100%;
+    /* height:134px; */
+    border-bottom: 1px solid rgba(236, 236, 236, 0.5);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    position:sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: white;
+    z-index:10;
+   
+}
+.title{
+    font-family: 'Aclonica', 'sans-serif';
+    font-size: 40px;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 0.5;
+    
+}
+
+.buttitle{
+    background-color: transparent;
+    border: none;
+}
+.searchtext{
+    border:none;
+    font-size: 10px;
+    
+
+}
+.searchtext:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.searchicon{
+    /* font-size: 1.3em; */
+    margin:0;
+    padding:0;
+
+
+}
+.search{
+    display:inline-block;
+    height:24px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+::placeholder{
+    padding-left: 5px;
+}
+.subtitle{
+    font-family: 'Space Mono', 'monospace';
+    font-size: 6px;
+    letter-spacing: 4px;
+    margin: 0;
+    padding-top: 5px;
+    
+
+}
+.headerone{
+    display: flex;
+    justify-content: space-between;
+}
+.headeroneleft{
+    flex: 2;
+    align-self: center;
+
+}
+.headeronemiddle{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.headeroneright{
+    flex:2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.wishlist , .cart ,.account {
+    padding-right: 25px;
+}
+.headertwo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+
+}
+.firstcat{
+    padding: 10px ;
+    font-size: 12px;
+    
+}
+.firstcat:hover{
+    cursor: pointer;
+}
+
+.wishlist:hover{
+    cursor: pointer;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.account:hover{
+    cursor: pointer;
+}
+.title:hover{
+    cursor: pointer;
+}
+.subtitle:hover{
+    cursor: pointer;
+}
+.firstcat:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    	
+		transform: scale(1.1) rotate(4deg);
+       
+	
+}
+.nav{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav:hover{
+    text-decoration: none;
+    color: black;
+    
+}
+.userlogin{
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    
+
+}
+.userlogin:hover{
+    color:rgba(0, 0, 0, 0.6);
+    
+}

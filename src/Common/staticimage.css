@@ -1,0 +1,90 @@
+.fourimages{
+    display: flex;
+    margin:40px 6px 0 6px;
+
+}
+.staticfour{
+    width: 100%;
+    height:350px;
+    background-size: cover;
+}
+    
+ .staticfour:hover{
+    transition: 0.9s;
+    opacity: 0.5;
+
+
+ }
+ .staticfour:hover + .statictext1  {
+     display: block;
+     
+ } 
+ .staticfour:hover + .statictext2  {
+    display: block;
+} 
+.staticfour:hover + .statictext3  {
+    display: block;
+} 
+.staticfour:hover + .statictext4  {
+    display: block;
+} 
+
+
+.firstimage,.secondimage,.thirdimage,.fourthimage{
+    flex:1;
+    background-color: black;
+    height: 350px;
+    
+}
+  
+.firstimage ,.secondimage ,.thirdimage,.fourthimage{
+    position: relative;
+}
+.secondimage{
+    position: relative;
+}
+.statictext1{
+    position: absolute;
+    top:170px;
+    left:55px;
+    color:white;
+    /* font-weight: bolder; */
+    margin:0;
+    display:none;
+    font-family: 'Bangers', 'cursive';
+    font-size: 20px;
+}
+.statictext2{
+    position: absolute;
+    top:170px;
+    left:55px;
+    color:white;
+    /* font-weight: bolder; */
+    margin:0;
+    display:none;
+    font-family: 'Bangers', 'cursive';
+    font-size: 20px;
+}
+.statictext3{
+    position: absolute;
+    top:170px;
+    left:55px;
+    color:white;
+    /* font-weight: bolder; */
+    margin:0;
+    display:none;
+    font-family: 'Bangers', 'cursive';
+    font-size: 20px;
+}
+.statictext4{
+    position: absolute;
+    top:170px;
+    left:55px;
+    color:white;
+    /* font-weight: bolder; */
+    margin:0;
+    display:none;
+    font-family: 'Bangers',' cursive';
+    font-size: 20px;
+}
+
