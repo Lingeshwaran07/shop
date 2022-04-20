@@ -145,11 +145,7 @@ if (loginstatus===true){
                   <span style={{fontSize:"18px"}}>&nbsp; {username.slice(0,8)}</span>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-lg-end">
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Action
-                    </button>
-                  </li>
+                 
                   <li>
                     <button onClick={()=>navigate("/updatepassword")} class="dropdown-item" type="button">
                       Update Password

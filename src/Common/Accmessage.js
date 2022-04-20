@@ -18,7 +18,7 @@ const Accmessage = (props) => {
         <GrStatusGood
           style={{ marginRight: "5px", fontSize: "13px",}}
         />
-       Hello, {props.value} Your account has been created
+       Hello {props.value}, Your account has been created
       </p>
     </div>
   );
