@@ -35,11 +35,14 @@ const Contextprovider = ({ children }) => {
     password: "Qwerty@12",
     username: " lingeshwaran",}],
     currentuser:{email:"",password:"",loginstatus:false},
+    duplicatestatus:true,
     
   }
   const [state, dispatch] = useReducer(reducerfunction, initialstate);
   const[state2,dispatch2]=useReducer(filterreducer,initialfilter);
   const[state3,dispatch3]=useReducer(accountfunc,initialaccount);
+
+  console.log(state3.account);
 
   
 

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./signup.css";
 import FormikControl from "./FormikControl";
 import { Formik, Form } from "formik";
@@ -10,8 +10,9 @@ import { FcHome } from "react-icons/fc";
 import { RiLoginCircleFill } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-
+import { useToast } from "@chakra-ui/react";
 import "react-toastify/dist/ReactToastify.css";
+import Accmessage from "../Common/Accmessage";
 
 
 
@@ -22,10 +23,14 @@ const MAX_TOAST = 3;
 
 
 const Signup = () => {
-  const {state3:{account},dispatch3}=useContext(supply);
+  const toast1 = useToast();
+  const {state3:{account,duplicatestatus},dispatch3}=useContext(supply);
   let navigate=useNavigate();
+  console.log(duplicatestatus);
+
   
-  // console.log(account[0].username);
+  
+  
 
 
   
@@ -56,7 +61,19 @@ function notify() {
   });
   toastList.add(id);
 }
+useEffect(()=>{
 
+  if(duplicatestatus==false){
+    toast1({
+      position: "bottom-right",
+      render: () => <Accmessage value={account[account.length-1].username} />,
+    });
+
+  
+}
+
+},[account]
+);
   // const style = {
   //   position: "absolute",
   //   bottom: 10,
@@ -88,8 +105,21 @@ function notify() {
   function onsubmit(values) {
     // const val={...values,loginstatus:false};
     // console.log(val);
+    
+    
+    
     dispatch3({type:"ADD_USER",payload:values});
-  notify()
+    // dup();
+    // if(duplicatestatus==false){
+    //   toast1({
+    //     position: "bottom-right",
+    //     render: () => <Accmessage value={values.username} />,
+    //   });
+  
+    // }
+    
+    
+  
      
    
     

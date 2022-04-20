@@ -1,12 +1,12 @@
 import React from "react";
 import { GrStatusGood } from "react-icons/gr";
 
-const Toaster = (props) => {
+const Accmessage = (props) => {
   return (
     <div
       style={{
         margin: "0",
-        backgroundColor: "green",
+        backgroundColor: "blue",
         color: "white",
         display: "flex",
         alignItems: "center",
@@ -16,12 +16,12 @@ const Toaster = (props) => {
     >
       <p style={{ fontSize: "13px", margin: "0", padding: "4px 6px" }}>
         <GrStatusGood
-          style={{ marginRight: "5px", fontSize: "13px", color: "white" }}
+          style={{ marginRight: "5px", fontSize: "13px",}}
         />
-        {props.value} has been added to your cart
+       Hello, {props.value} Your account has been created
       </p>
     </div>
   );
 };
 
-export default Toaster;
+export default Accmessage;

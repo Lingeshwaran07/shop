@@ -1,6 +1,4 @@
 export const reducerfunction = (state, action) => {
-  
-  
   switch (action.type) {
     case "ADD_TO_CART":
       return {
@@ -77,7 +75,7 @@ export const filterreducer = (state2, action) => {
   }
 };
 
-export const accountfunc=(state3,action)=>{
+export const accountfunc = (state3, action) => {
   console.log(state3.account);
   // function updatpassfunc(e){
   //   if( e.mail==action.payload.email){
@@ -87,46 +85,45 @@ export const accountfunc=(state3,action)=>{
   //     e.password=e.password;
   //   }
 
-  
-  switch(action.type){
+  switch (action.type) {
     case "ADD_USER":
-      return{
-       ...state3,account:[...state3.account,{...action.payload}]
-
-
+      return {
+        ...state3,
+        account: state3.account.some((i) => i.email == action.payload.email)
+          ? [...state3.account]
+          : [...state3.account, { ...action.payload }],
+          duplicatestatus:  state3.account.some((i) => i.email == action.payload.email),
       };
 
-      case "CHECK_LOGIN":
-        return{
-          ...state3,
-        currentuser:{...action.payload,loginstatus:state3.account.some((s)=>s.email===action.payload.email  &&  s.password==action.payload.password )} 
+    case "CHECK_LOGIN":
+      return {
+        ...state3,
+        currentuser: {
+          ...action.payload,
+          loginstatus: state3.account.some(
+            (s) =>
+              s.email === action.payload.email &&
+              s.password == action.payload.password
+          ),
+        },
+      };
 
-        };
+    case "UPDATE_PASSWORD":
+      return {
+        ...state3,
+        account: state3.account.filter((e) =>
+          e.mail == action.payload.email
+            ? (e.password = action.payload.password)
+            : (e.password = e.password)
+        ),
+      };
 
-
-        case "UPDATE_PASSWORD":
-          return{
-          ...state3,account:state3.account.filter((e)=> e.mail==action.payload.email? (e.password=action.payload.password) :(e.password=e.password)  )
-    
-    
-          };
-
-          case "LOGOUT":
-            return{
-              ...state3,currentuser:{email:"",password:"",loginstatus:false}
-             
-      
-      
-            };  
-      default:
-        return state3;
-    }
+    case "LOGOUT":
+      return {
+        ...state3,
+        currentuser: { email: "", password: "", loginstatus: false },
+      };
+    default:
+      return state3;
   }
-
-
-
-
-
-
-
-
+};
