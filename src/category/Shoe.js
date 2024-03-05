@@ -31,8 +31,8 @@ const Shoe = () => {
       
   const shoecategoryfilter = products.filter(
     (i) =>
-    (i.category === "Sports Shoes" ||
-    i.category === "Casual Shoes")
+    (i.category === "mens-shoes" ||
+    i.category === "womens-shoes")
   );
 
 

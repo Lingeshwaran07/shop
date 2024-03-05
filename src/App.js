@@ -23,7 +23,9 @@ function App() {
   const { state, dispatch } = useContext(supply);
 
   const api = async () => {
-    const response = await fetch("https://demo7303877.mockable.io/");
+    //const response = await fetch("https://demo7303877.mockable.io/");
+    const response = await fetch("https://dummyjson.com/products?limit=0");
+
     const data = await response.json();
 
     // setarr([...data.products]);
@@ -37,15 +39,15 @@ function App() {
 
     const productslist = data.products.map((val) => ({
       id: uuidv4(),
-      name: val.productName,
-      price: val.price,
-      image: val.searchImage,
+      name: val.title,
+      price: val.price+500,
+      image: val.images[0],
       category: val.category,
       instock: instock[Math.floor(Math.random() * instock.length)],
       fastDelivery: boolean[Math.floor(Math.random() * boolean.length)],
       ratings: rating[Math.floor(Math.random() * rating.length)],
-      gender: val.gender,
-      mrp: val.mrp,
+      gender: ['mens-shirts'].includes(val.category)?'Men':'Women',
+      mrp:val.price+1000 ,
     }));
 
     dispatch({ type: "data", payload: productslist });

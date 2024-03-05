@@ -28,7 +28,7 @@ const Men = () => {
   const mencategoryfilter = products.filter(
     (i) =>
       (i.gender === "Men" || i.gender === "Unisex" || i.gender === "Boys") &&
-      (i.category === "Shirts" ||
+      (i.category === "mens-shirts" ||
         i.category === "Jeans" ||
         i.category === "Track Pants" ||
         i.category === "Sweatshirts" ||

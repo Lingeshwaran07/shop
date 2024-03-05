@@ -31,7 +31,7 @@ const Watch = () => {
       
   const watchcategoryfilter = products.filter(
     (i) =>
-      i.category === "Watches"
+      (i.category === "mens-watches"|| i.category === "womens-watches")
   );
 
   

@@ -31,7 +31,7 @@ const Women = () => {
       
   const womencategoryfilter = products.filter(
     (i) =>
-      i.gender === "Women" && i.category !== "Watches"
+      i.category === "womens-dresses" || i.category === "tops" || i.category === "skincare" || i.category === "womens-bags"
   );
   
   const finalfiltering=()=>{

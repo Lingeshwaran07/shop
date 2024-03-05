@@ -31,7 +31,7 @@ const Earphones = () => {
       
   const earphonescategoryfilter = products.filter(
     (i) =>
-    i.category === "Headphones"
+    (i.category === "smartphones" ||i.category === "laptops" )
   );
   
   const finalfiltering=()=>{
